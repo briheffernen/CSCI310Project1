@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name ="Project1" default ="compile" basedir = ".">
+	<description>This is a test</description>
+	
+	<!--Global properties for this build file-->
+	<property name="source.dir" location="src" />
+	<property name="build.dir" location="bin" />
+	
+	<!-- Set up directories used by this project -->
+	<target name = "init" description = "setup project directories">
+		<mkdir dir="${build.dir}" /> 
+		<mkdir dir="${source.dir}"/> 
+	</target>	
+	
+	<!-- Compile java code in src dir into build dir -->		
+	<target name = "compile" depends = "init" description = "compile java sources">
+		<javac srcdir="${source.dir}" destdir="${build.dir}"/> 
+	</target>
+	
+	<!--  Delete the build and doc directories -->
+	
+</project>
