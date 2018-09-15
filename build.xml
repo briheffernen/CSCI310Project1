@@ -18,8 +18,7 @@
 		<javac srcdir="${source.dir}" destdir="${build.dir}"/> 
 	</target>
 	
-	<!--  Delete the build and doc directories Test -->
-	<!--  This is a test again -->
+	<!--  Delete the build and doc directories -->
 	
 	
 </project>
