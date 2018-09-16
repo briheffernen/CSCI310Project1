@@ -30,7 +30,7 @@
 	
 	<!-- Transform bin class to dist jar -->
 	<target name = "dist" depends = "init, compile" description = "make jar">
-		<jar destfile = "${dist.dir}/Project1.jar" basedir = "${bin.dir}/CSCI310"/>
+		<jar destfile = "${dist.dir}/Project1.jar" basedir = "${bin}/CSCI310"/>
 	</target>
 	
 	
