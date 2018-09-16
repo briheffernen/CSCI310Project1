@@ -7,6 +7,7 @@
 	<property name="build.dir" location="bin" />
 	<property name="doc.dir" location="doc" /> 
 	<property name ="dist.dir" location="dist" />
+	<property name ="source.dir" location = "src" />
 	
 	<!-- Set up directories used by this project -->
 	<target name = "init" description = "setup project directories">
