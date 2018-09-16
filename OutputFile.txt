@@ -1,0 +1,7 @@
+Destination	Flight Route From P	Total Cost
+W	PW $200
+R	PR $300
+S	PWS $450
+Y	PWY $700
+Z	PRZ $500
+T	PWST $750

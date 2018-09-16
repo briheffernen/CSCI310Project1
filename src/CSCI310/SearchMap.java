@@ -10,17 +10,19 @@ public class SearchMap {
 	public static void main(String[] args) {
 		
 		FileReader fr = null; 
-		String filename = args[0]; 
+		String inputFile = args[0]; 
+		String outputFile = args[1]; 
 		String first = ""; 
 		FlightMap map = new FlightMap(); 
 		
 		try {
-			fr = new FileReader(filename); 
+			fr = new FileReader(inputFile); 
 			BufferedReader buffer = new BufferedReader(fr); 
 			first = buffer.readLine(); 
 			System.out.println("Origin City: " + first);
 			
 			map.addOrigin(first);
+			map.setOutput(outputFile);
 			
 			String current = buffer.readLine(); 
 

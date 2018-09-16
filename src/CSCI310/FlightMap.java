@@ -1,22 +1,36 @@
 package CSCI310;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue; 
 
 public class FlightMap {
+	
 	private HashMap<String, ArrayList<CostPair>> map = new HashMap<>(); 
 	private String origin; 
+	private String outputFile; 
 	private 	HashMap<String, CostPair> predecessors = new HashMap<>(); 
 
 	
 	void addOrigin(String first) {
+		// Sets origin of flight map 
 		this.origin = first; 
+	}
+	
+	void setOutput(String filename) {
+		// Sets the output file name
 		
+		System.out.println("Set output file to " + filename);
+		this.outputFile = filename; 
 	}
 	
 	void addEdge(String line) {
+		// Reads through line and adds an edge to the flight map
+		
 		String[] parts = line.split(" "); 
 		
 		String from = parts[0]; 
@@ -27,38 +41,36 @@ public class FlightMap {
 		CostPair currentPair = new CostPair(to, cost); 
 		CostPair parent = new CostPair(from, cost); 
 		
+		// Check if predecessor exists for current node
 		CostPair parentExists = predecessors.get(to); 
 		
-		
+		// Set predecessor by adding to predecessors HashMap 
 		if (parentExists == null && !to.equals(origin)) {
 			predecessors.put(to, parent); 	
 		}
-		
-		//System.out.println("Set predecessor of " + to + " to " + from + " with cost " + cost);
-		
-		//System.out.println("Read in " + from + " " + to + " $" + cost);
-		
+				
 		ArrayList<CostPair> result = map.get(from); 
 		
 		if (result != null) {
-			//System.out.print("Adding to array list for " + from + " - ");
-			//currentPair.print(); 
+			// Add edge to already existing node  
+
 			result.add(currentPair); 
 			map.put(from, result); 
 		} else {
-			//System.out.println("Adding a new array list");
+			// Add a new node and edge 
+
 			result = new ArrayList<CostPair>(); 
 			result.add(currentPair); 
 			map.put(from, result); 
 		}
-		
-//		System.out.print(from + " ");
-//		currentPair.print();	
 	}
 	
 	public void printFlightMap() {
 		
-		System.out.println("Destination\tFlight Route From P\tTotal Cost");
+		// Output flight hash map to designated file  
+		String output = ""; 
+		
+		output += "Destination\tFlight Route From P\tTotal Cost\n";
 		
 		HashMap<String, Boolean> visited = new HashMap<>(); 
 		LinkedList<String> queue = new LinkedList<String>(); 
@@ -73,9 +85,9 @@ public class FlightMap {
 			visited.put(current, true);
 			
 			if (!current.equals(origin)) {
-				System.out.print(current + "\t");
+				output += current + "\t";
 				
-				printParents(current, predecessors,0); 
+				output += printParents(current, predecessors,0) + "\n"; 
 			
 			}
 			
@@ -94,9 +106,23 @@ public class FlightMap {
 			}
 
 		}
+		
+		try {
+			FileWriter fileWriter = new FileWriter(outputFile);
+			PrintWriter printWriter = new PrintWriter(fileWriter); 
+			printWriter.print(output);
+			printWriter.close();
+			fileWriter.close();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		System.out.println("File was saved.");
+
+		//System.out.println(output); 
 	} 
 	
-	public void printParents(String start, HashMap<String,CostPair> parents, int cost) {
+	public String printParents(String start, HashMap<String,CostPair> parents, int cost) {
 		int totalCost = cost; 
 		String toPrint = ""; 
 		
@@ -116,7 +142,7 @@ public class FlightMap {
 		}
 		
 		toPrint += start; 
-		System.out.println(toPrint + " $" + totalCost);
+		return toPrint + " $" + totalCost; 
 	}
 }
 
@@ -137,7 +163,4 @@ class CostPair {
 		return this.cost; 
 	}
 	
-	public void print() {
-		System.out.println(destination + " $" + cost);
-	}
 }
