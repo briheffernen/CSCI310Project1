@@ -7,11 +7,13 @@
 	<property name="source.dir" location="src" />
 	<property name="build.dir" location="bin" />
 	<property name="doc.dir" location="doc" /> 
+	<propert name ="dist.dir" location="dist" />
 	
 	<!-- Set up directories used by this project -->
 	<target name = "init" description = "setup project directories">
-		<mkdir dir="${build.dir}" /> 
+		<mkdir dir="${build.dir}"/> 
 		<mkdir dir="${doc.dir}"/> 
+		<mkdir dir="${dist.dir}"/> 
 	</target>	
 	
 	<!-- Compile java code in src dir into build dir -->		
