@@ -28,5 +28,11 @@
 		<delete dir = "${dist.dir}" />
 	</target>
 	
+	<!-- Transform bin class to dist jar -->
+	<target name = "dist" depends = "init, compile" description = "make jar">
+		<jar destfile = "${dist.dir}" basedir = "${bin.dir}"/>
+	</target>
+	
+	
 	
 </project>
