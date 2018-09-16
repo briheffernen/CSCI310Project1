@@ -18,13 +18,13 @@ public class FlightMap {
 	
 	void addOrigin(String first) {
 		// Sets origin of flight map 
+		
 		this.origin = first; 
 	}
 	
 	void setOutput(String filename) {
 		// Sets the output file name
 		
-		System.out.println("Set output file to " + filename);
 		this.outputFile = filename; 
 	}
 	
@@ -117,9 +117,6 @@ public class FlightMap {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println("File was saved.");
-
-		//System.out.println(output); 
 	} 
 	
 	public String printParents(String start, HashMap<String,CostPair> parents, int cost) {

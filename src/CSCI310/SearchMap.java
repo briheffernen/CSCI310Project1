@@ -19,7 +19,7 @@ public class SearchMap {
 			fr = new FileReader(inputFile); 
 			BufferedReader buffer = new BufferedReader(fr); 
 			first = buffer.readLine(); 
-			System.out.println("Origin City: " + first);
+			//System.out.println("Origin City: " + first);
 			
 			map.addOrigin(first);
 			map.setOutput(outputFile);
