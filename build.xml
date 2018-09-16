@@ -10,7 +10,7 @@
 	<!-- Set up directories used by this project -->
 	<target name = "init" description = "setup project directories">
 		<mkdir dir="${build.dir}" /> 
-		<mkdir dir="${source.dir}"/> 
+		<mkdir dir="${doc.dir}"/> 
 	</target>	
 	
 	<!-- Compile java code in src dir into build dir -->		
@@ -19,6 +19,10 @@
 	</target>
 	
 	<!--  Delete the build and doc directories -->
+	<target name = "clean" description = "tidy up">
+		<delete dir = "${build.dir}"/> 
+		<delete dir = "${doc.dir}" /> 
+	</target>
 	
 	
 </project>
