@@ -33,6 +33,9 @@
 		<jar destfile = "${dist.dir}/Project1.jar" basedir = "${build.dir}/CSCI310"/>
 	</target>
 	
-	
+	<!-- Generate HTML files in doc dir -->
+	<target name = "doc" depends = "init" description = "generate HTML"> 
+		<javadoc sourcepath = "${source.dir}" destdir = "${doc.dir}" />
+	</target>
 	
 </project>
