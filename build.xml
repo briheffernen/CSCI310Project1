@@ -6,7 +6,7 @@
 	<!--Global properties for this build file-->
 	<property name="build.dir" location="bin" />
 	<property name="doc.dir" location="doc" /> 
-	<propert name ="dist.dir" location="dist" />
+	<property name ="dist.dir" location="dist" />
 	
 	<!-- Set up directories used by this project -->
 	<target name = "init" description = "setup project directories">
