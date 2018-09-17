@@ -7,6 +7,7 @@
 	<property name="doc.dir" location="doc" /> 
 	<property name ="dist.dir" location="dist" />
 	<property name ="source.dir" location = "src" />
+	<property name = "lib.dir" location = "lib" /> 
 	
 	<!-- Set up directories used by this project -->
 	<target name = "init" description = "setup project directories">
@@ -41,24 +42,24 @@
     	<property environment="env"/>
     <property name="junit.output.dir" value="junit"/>
     <path id="JUnit 5.libraryclasspath">
-        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.api_5.0.0.v20170910-2246.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.engine_5.0.0.v20170910-2246.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.migrationsupport_5.0.0.v20170910-2246.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.params_5.0.0.v20170910-2246.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.commons_1.0.0.v20170910-2246.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.engine_1.0.0.v20170910-2246.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.launcher_1.0.0.v20170910-2246.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.runner_1.0.0.v20170910-2246.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.suite.api_1.0.0.v20170910-2246.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit.vintage.engine_4.12.0.v20170910-2246.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.opentest4j_1.0.0.v20170910-2246.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.apiguardian_1.0.0.v20170910-2246.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
-        <pathelement location="../../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+        <pathelement location="${lib.dir}/org.junit.jupiter.api_5.0.0.v20170910-2246.jar"/>
+        <pathelement location="${lib.dir}/org.junit.jupiter.engine_5.0.0.v20170910-2246.jar"/>
+        <pathelement location="${lib.dir}/org.junit.jupiter.migrationsupport_5.0.0.v20170910-2246.jar"/>
+        <pathelement location="${lib.dir}/org.junit.jupiter.params_5.0.0.v20170910-2246.jar"/>
+        <pathelement location="${lib.dir}/org.junit.platform.commons_1.0.0.v20170910-2246.jar"/>
+        <pathelement location="${lib.dir}/org.junit.platform.engine_1.0.0.v20170910-2246.jar"/>
+        <pathelement location="${lib.dir}/org.junit.platform.launcher_1.0.0.v20170910-2246.jar"/>
+        <pathelement location="${lib.dir}/org.junit.platform.runner_1.0.0.v20170910-2246.jar"/>
+        <pathelement location="${lib.dir}/org.junit.platform.suite.api_1.0.0.v20170910-2246.jar"/>
+        <pathelement location="${lib.dir}/org.junit.vintage.engine_4.12.0.v20170910-2246.jar"/>
+        <pathelement location="${lib.dir}/org.opentest4j_1.0.0.v20170910-2246.jar"/>
+        <pathelement location="${lib.dir}/org.apiguardian_1.0.0.v20170910-2246.jar"/>
+        <pathelement location="${lib.dir}/junit.jar"/>
+        <pathelement location="${lib.dir}/org.hamcrest.core_1.3.0.v201303031735.jar"/>
     </path>
     
     <path id="Project1.classpath">
-        <pathelement location="bin"/>
+        <pathelement location="lib"/>
         <path refid="JUnit 5.libraryclasspath"/>
     </path>
     	
