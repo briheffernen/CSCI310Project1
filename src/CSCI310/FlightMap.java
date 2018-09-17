@@ -173,6 +173,10 @@ public class FlightMap {
 		
 		return toPrint + "$" + totalCost; 
 	}
+	
+	public HashMap<String, ArrayList<CostPair>> getFlightMap() {
+		return this.map; 
+	}
 }
 
 class CostPair {
