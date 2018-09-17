@@ -82,7 +82,10 @@ public class FlightMap {
 		// Output flight hash map to designated file  
 		String output = ""; 
 		
-		output += "Destination\tFlight Route From P\tTotal Cost\n";
+		output += "Destination           ";
+		output += "Flight Route From P           ";
+		output += "Destination           ";
+		output += "Total Cost\n";
 		
 		// Set up for BFS 
 		HashMap<String, Boolean> visited = new HashMap<>(); 
@@ -119,6 +122,8 @@ public class FlightMap {
 				}
 			}
 
+			// 11 spaces 
+			// i = 0, i++, 23 - path size *2 
 		}
 		
 		try {
@@ -144,23 +149,32 @@ public class FlightMap {
 		// Prints the path from the origin to the destination 
 		
 		int totalCost = cost; 
+		int pathSize = 0; 
 		String toPrint = ""; 
 		
 		CostPair before = parents.get(start); 
 				
 		while (before != null) {
 			// Iterate through the nodes from the start node to the origin  
+			pathSize++; 
+			
 			int addCost = before.getCost(); 
+		
 			String parent = before.getDestination(); 
 
 			totalCost += addCost; 
-			toPrint = parent + toPrint; 
+			toPrint = parent + "," + toPrint; 
 			
 			before = parents.get(parent); 
 		}
 		
 		toPrint += start; 
-		return toPrint + " $" + totalCost; 
+		
+		for (int i = 0; i < 23 - pathSize; i++) {
+			toPrint += " "; 
+		}
+		
+		return toPrint + "$" + totalCost; 
 	}
 }
 
