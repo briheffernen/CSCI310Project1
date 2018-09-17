@@ -1,4 +1,4 @@
-package src.CSCI310;
+package CSCI310;
 
 import java.io.FileWriter;
 import java.io.IOException;
