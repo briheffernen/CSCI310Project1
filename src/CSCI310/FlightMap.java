@@ -83,7 +83,7 @@ public class FlightMap {
 		String output = ""; 
 		
 		output += "Destination           ";
-		output += "Flight Route From P           ";
+		output += "Flight Route From P   ";
 		output += "Total Cost\n";
 		
 		// Set up for BFS 
@@ -101,7 +101,7 @@ public class FlightMap {
 			visited.put(current, true);
 			
 			if (!current.equals(origin)) {
-				output += "           " + current + "           ";
+				output += current + "                      ";
 				
 				output += printParents(current, predecessors,0) + "\n"; 
 			
@@ -121,8 +121,6 @@ public class FlightMap {
 				}
 			}
 
-			// 11 spaces 
-			// i = 0, i++, 23 - path size *2 
 		}
 		
 		try {
