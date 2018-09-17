@@ -1,15 +1,15 @@
 package CSCI310;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 
-class TestFlightMap {
+import org.junit.Test;
+
+public class TestFlightMap {
 
 	@Test
-	void testAddEdge() {
+	public void testAddEdge() {
 		FlightMap testMap = new FlightMap(); 
 		testMap.addOrigin("A");
 		
@@ -21,24 +21,6 @@ class TestFlightMap {
 		
 		assertEquals(compare, "B"); 
 	}
-	
-//	@Test
-//	void testPrintFlightMap() {
-//		
-//	}
-//	
-//	@Test
-//	void testPrintPath() {
-//		
-//	}
-//	
-//	@Test
-//	void testAddOrigin() {
-//		
-//	}
-//			
-//	@Test
-//	void testSetOutput() {
-//		
-//	}
+
 }
+
