@@ -103,7 +103,7 @@ public class FlightMap {
 			if (!current.equals(origin)) {
 				output += current + "                     ";
 				
-				output += printParents(current, predecessors,0) + "\n"; 
+				output += printPath(current, predecessors,0) + "\n"; 
 			
 			}
 			
@@ -142,7 +142,7 @@ public class FlightMap {
 	 * @param cost the original cost to be added to throughout the path
 	 * @return returns a string with the path from the destination node to the origin
 	 */
-	public String printParents(String start, HashMap<String,CostPair> parents, int cost) {
+	public String printPath(String start, HashMap<String,CostPair> parents, int cost) {
 		// Prints the path from the origin to the destination 
 		
 		int totalCost = cost; 
