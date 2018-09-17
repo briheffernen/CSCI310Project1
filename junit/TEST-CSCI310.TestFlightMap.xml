@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="3" failures="0" hostname="Briannas-MacBook-Air.local" name="CSCI310.TestFlightMap" skipped="0" tests="3" time="5.225" timestamp="2018-09-17T07:47:09">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="lib.dir" value="/Users/Bri/Documents/csci310/Project1/lib" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="env.XPC_SERVICE_NAME" value="org.eclipse.platform.ide.15584" />
+    <property name="eclipse.pdebuild.templates" value="/Users/Bri/Desktop/Eclipse.app/Contents/Eclipse/../../../../.p2/pool/plugins/org.eclipse.pde.build_3.9.300.v20170515-0912/templates" />
+    <property name="env.JAVA_STARTED_ON_FIRST_THREAD_42267" value="1" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/classes" />
+    <property name="env.TMPDIR" value="/var/folders/1p/ntk46n2128g3wplv51469q400000gn/T/" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/Users/Bri/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840" />
+    <property name="java.runtime.version" value="1.8.0_161-b12" />
+    <property name="env.Apple_PubSub_Socket_Render" value="/private/tmp/com.apple.launchd.ySZ2WR4kHz/Render" />
+    <property name="user.name" value="Bri" />
+    <property name="env.USER" value="Bri" />
+    <property name="env.JAVA_MAIN_CLASS_45664" value="org.eclipse.ant.internal.launching.remote.InternalAntRunner" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0x1F5:0x0:0x0" />
+    <property name="build.dir" value="/Users/Bri/Documents/csci310/Project1/bin" />
+    <property name="env.PATH" value="/usr/bin:/bin:/usr/sbin:/sbin" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="compile" />
+    <property name="env.XPC_FLAGS" value="0x0" />
+    <property name="doc.dir" value="/Users/Bri/Documents/csci310/Project1/doc" />
+    <property name="ant.project.name" value="Project1" />
+    <property name="java.version" value="1.8.0_161" />
+    <property name="user.timezone" value="" />
+    <property name="ant.file.Project1" value="/Users/Bri/Documents/csci310/Project1/build.xml" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre" />
+    <property name="dist.dir" value="/Users/Bri/Documents/csci310/Project1/dist" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.LOGNAME" value="Bri" />
+    <property name="ant.file" value="/Users/Bri/Documents/csci310/Project1/build.xml" />
+    <property name="os.version" value="10.12.6" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="25.161-b12" />
+    <property name="ant.library.dir" value="/Users/Bri/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="eclipse.pdebuild.scripts" value="/Users/Bri/Desktop/Eclipse.app/Contents/Eclipse/../../../../.p2/pool/plugins/org.eclipse.pde.build_3.9.300.v20170515-0912/scripts" />
+    <property name="user.home" value="/Users/Bri" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.library.path" value="/Users/Bri/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner CSCI310.TestFlightMap skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Bri/Documents/csci310/Project1/junit/TEST-CSCI310.TestFlightMap.xml crashfile=/Users/Bri/Documents/csci310/Project1/junitvmwatcher2283812233893046890.properties propsfile=/Users/Bri/Documents/csci310/Project1/junit7334856775217148657.properties" />
+    <property name="java.class.path" value="/Users/Bri/Documents/csci310/Project1/bin:/Users/Bri/.p2/pool/plugins/org.junit.jupiter.api_5.0.0.v20170910-2246.jar:/Users/Bri/.p2/pool/plugins/org.junit.jupiter.engine_5.0.0.v20170910-2246.jar:/Users/Bri/.p2/pool/plugins/org.junit.jupiter.migrationsupport_5.0.0.v20170910-2246.jar:/Users/Bri/.p2/pool/plugins/org.junit.jupiter.params_5.0.0.v20170910-2246.jar:/Users/Bri/.p2/pool/plugins/org.junit.platform.commons_1.0.0.v20170910-2246.jar:/Users/Bri/.p2/pool/plugins/org.junit.platform.engine_1.0.0.v20170910-2246.jar:/Users/Bri/.p2/pool/plugins/org.junit.platform.launcher_1.0.0.v20170910-2246.jar:/Users/Bri/.p2/pool/plugins/org.junit.platform.runner_1.0.0.v20170910-2246.jar:/Users/Bri/.p2/pool/plugins/org.junit.platform.suite.api_1.0.0.v20170910-2246.jar:/Users/Bri/.p2/pool/plugins/org.junit.vintage.engine_4.12.0.v20170910-2246.jar:/Users/Bri/.p2/pool/plugins/org.opentest4j_1.0.0.v20170910-2246.jar:/Users/Bri/.p2/pool/plugins/org.apiguardian_1.0.0.v20170910-2246.jar:/Users/Bri/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar:/Users/Bri/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar:/Users/Bri/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-launcher.jar:/Users/Bri/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant.jar:/Users/Bri/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-junit.jar:/Users/Bri/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.1 compiled on February 2 2017" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="env.HOME" value="/Users/Bri" />
+    <property name="env.ANT_HOME" value="/Users/Bri/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840" />
+    <property name="eclipse.pdebuild.home" value="/Users/Bri/Desktop/Eclipse.app/Contents/Eclipse/../../../../.p2/pool/plugins/org.eclipse.pde.build_3.9.300.v20170515-0912/." />
+    <property name="java.io.tmpdir" value="/var/folders/1p/ntk46n2128g3wplv51469q400000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="env.SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.oYayuKZOTp/Listeners" />
+    <property name="os.arch" value="x86_64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="java.ext.dirs" value="/Users/Bri/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/Bri/Documents/csci310/Project1" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="/Users/Bri/Documents/csci310/Project1" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="/Users/Bri/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="source.dir" value="/Users/Bri/Documents/csci310/Project1/src" />
+    <property name="ant.file.type.Project1" value="file" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="env.APP_ICON_42267" value="../Resources/Eclipse.icns" />
+    <property name="env.JAVA_STARTED_ON_FIRST_THREAD_45664" value="1" />
+  </properties>
+  <testcase classname="CSCI310.TestFlightMap" name="initializationError" time="0.001">
+    <error message="The class CSCI310.TestFlightMap is not public." type="java.lang.Exception">java.lang.Exception: The class CSCI310.TestFlightMap is not public.
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+</error>
+    <error message="Test class should have exactly one public constructor" type="java.lang.Exception">java.lang.Exception: Test class should have exactly one public constructor
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+</error>
+    <error message="No runnable methods" type="java.lang.Exception">java.lang.Exception: No runnable methods
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+</error>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
