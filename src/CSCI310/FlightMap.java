@@ -84,7 +84,6 @@ public class FlightMap {
 		
 		output += "Destination           ";
 		output += "Flight Route From P           ";
-		output += "Destination           ";
 		output += "Total Cost\n";
 		
 		// Set up for BFS 
