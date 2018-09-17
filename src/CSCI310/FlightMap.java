@@ -102,7 +102,7 @@ public class FlightMap {
 			visited.put(current, true);
 			
 			if (!current.equals(origin)) {
-				output += current + "\t";
+				output += "           " + current + "           ";
 				
 				output += printParents(current, predecessors,0) + "\n"; 
 			
