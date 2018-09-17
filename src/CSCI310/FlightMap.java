@@ -18,7 +18,7 @@ public class FlightMap {
 	 * This sets the origin of the flight map 
 	 * @param first the origin city 
 	 */
-	void addOrigin(String first) {
+	public void addOrigin(String first) {
 		// Sets origin of flight map 	
 		this.origin = first; 
 	}
@@ -27,16 +27,25 @@ public class FlightMap {
 	 * This sets the output filename for the flight map to eventually be printed to
 	 * @param filename the name of the output file 
 	 */
-	void setOutput(String filename) {
+	public void setOutput(String filename) {
 		// Sets the output file name
 		this.outputFile = filename; 
 	}
+	
+	public String getOutput() {
+		return this.outputFile; 
+	}
+	
+	public String getOrigin() {
+		return this.origin; 
+	}
+	
 	
 	/**
 	 * This function adds edges to the graph using the origin, destination, and cost 
 	 * @param line is the current line from the input file to be parsed and added to map 
 	 */
-	void addEdge(String line) {
+	public void addEdge(String line) {
 		// Reads through line and adds an edge to the flight map
 		
 		String[] parts = line.split(" "); 
@@ -103,7 +112,7 @@ public class FlightMap {
 			if (!current.equals(origin)) {
 				output += current + "                     ";
 				
-				output += printPath(current, predecessors,0) + "\n"; 
+				output += printParents(current, predecessors,0) + "\n"; 
 			
 			}
 			
@@ -142,7 +151,7 @@ public class FlightMap {
 	 * @param cost the original cost to be added to throughout the path
 	 * @return returns a string with the path from the destination node to the origin
 	 */
-	public String printPath(String start, HashMap<String,CostPair> parents, int cost) {
+	public String printParents(String start, HashMap<String,CostPair> parents, int cost) {
 		// Prints the path from the origin to the destination 
 		
 		int totalCost = cost; 
@@ -177,6 +186,11 @@ public class FlightMap {
 	public HashMap<String, ArrayList<CostPair>> getFlightMap() {
 		return this.map; 
 	}
+	
+	public HashMap<String, CostPair> getParents() {
+		return this.predecessors; 
+	}
+
 }
 
 class CostPair {
