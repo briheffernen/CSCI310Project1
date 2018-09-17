@@ -170,7 +170,7 @@ public class FlightMap {
 		
 		toPrint += start; 
 		
-		for (int i = 0; i < 23 - pathSize; i++) {
+		for (int i = 0; i < 23 - pathSize*2; i++) {
 			toPrint += " "; 
 		}
 		
